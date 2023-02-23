@@ -24,7 +24,9 @@ public class CountdownTimer : MonoBehaviour
         }
         else
         {
+            FindObjectOfType<GameManager>().Explode();
 
+            //show play again
         }
         
     }

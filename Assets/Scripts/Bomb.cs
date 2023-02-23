@@ -8,6 +8,9 @@ public class Bomb : MonoBehaviour
         {
             GetComponent<Collider>().enabled = false;
             FindObjectOfType<GameManager>().Explode();
+
+
+            //show play again
         }
     }
 
