@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(1f);
 
-        NewGame();
+        //NewGame();
 
         elapsed = 0f;
 

@@ -1467,7 +1467,7 @@ MonoBehaviour:
   - {fileID: 1322510157125763251, guid: e80fcfc9f70e2c640a4d22775c8860de, type: 3}
   - {fileID: 1345022896480124042, guid: a90ffa1befc33e4479cfb37fb5dece47, type: 3}
   bombPrefab: {fileID: 502755466114576495, guid: d99c48bb415f49e47980e58f71e639bb, type: 3}
-  bombChance: 0.5
+  bombChance: 1
   minSpawnDelay: 0.5
   maxSpawnDelay: 1
   minAngle: -15
@@ -1680,3 +1680,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsText: {fileID: 519759090}
+  gameManager: {fileID: 0}
+  image: {fileID: 675265352}
