@@ -1,16 +1,23 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public Text scoreText;
     public Image fadeImage;
+    public GameOverScreen gameOverScreen;
 
     private Blade blade;
     private Spawner spawner;
 
     private int score;
+
+    public void GameOver()
+    {
+        gameOverScreen.Setup(score);
+    }
 
     private void Awake()
     {
@@ -18,12 +25,12 @@ public class GameManager : MonoBehaviour
         spawner = FindObjectOfType<Spawner>();
     }
 
-    private void Start()
+    public void Start()
     {
         NewGame();
     }
 
-    private void NewGame()
+    public void NewGame()
     {
         Time.timeScale = 1f;
 
@@ -55,13 +62,18 @@ public class GameManager : MonoBehaviour
     {
         score += points;
         scoreText.text = score.ToString();
+
+        //foreach (Fruit fruit in fruits)
+        //{
+        //    Destroy(fruit.gameObject);
+        //}
     }
 
     public void Explode()
     {
         blade.enabled = false;
         spawner.enabled = false;
-
+        GameOver();
         StartCoroutine(ExplodeSequence());
     }
 
@@ -99,5 +111,7 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
     }
+
+    
 
 }
