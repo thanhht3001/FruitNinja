@@ -47,13 +47,15 @@ public class GameManager : MonoBehaviour
     {
         Fruit[] fruits = FindObjectsOfType<Fruit>();
 
-        foreach (Fruit fruit in fruits) {
+        foreach (Fruit fruit in fruits)
+        {
             Destroy(fruit.gameObject);
         }
 
         Bomb[] bombs = FindObjectsOfType<Bomb>();
 
-        foreach (Bomb bomb in bombs) {
+        foreach (Bomb bomb in bombs)
+        {
             Destroy(bomb.gameObject);
         }
     }
@@ -112,6 +114,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+
 
 }
