@@ -335,6 +335,7 @@
 "Assets/Scripts/CountdownTimer.cs"
 "Assets/Scripts/Fruit.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GameOverScreen.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/Scripts/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
